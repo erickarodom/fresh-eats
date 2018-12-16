@@ -1,4 +1,3 @@
-
 // Global Styles
 * {
     margin: 0;
@@ -31,10 +30,6 @@
     display: flex;
     justify-content: space-between;
     padding-top: 0.5em;
-}
-
-.logo {
-    padding-left: 0.8em;
 }
 
 .icon {
@@ -80,7 +75,7 @@
     flex-direction: column;
     justify-content: center;
 
-    @media (min-width: 600px) {
+    @media (min-width: 750px) {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
@@ -94,7 +89,7 @@
     font-family: 'Merriweather Sans', sans-serif;
     order: 2;
 
-    @media (min-width: 600px) {
+    @media (min-width: 750px) {
         order: 1;
         line-height: 3em;
     }
@@ -103,20 +98,42 @@
 .header-col-2 {
     order: 1;
 
-    @media (min-width: 600px) {
+    @media (min-width: 750px) {
         order: 2;
         flex-basis: 700px;
     }
 }
 // End Header
-
 // Main Content Styling
+
+.works-text,
+.view-menu-text {
+    text-align: center;
+    margin: 0 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 2;
+}
+
+h2 {
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.menu-text p {
+    text-align: center;
+    margin: 0 2em;
+    margin-bottom: 1.5em;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .main-content-row-1 {
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 600px) {
+    @media (min-width: 750px) {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
@@ -127,7 +144,7 @@
 .main-content-col-1 {
     order: 2;
 
-    @media (min-width: 600px) {
+    @media (min-width: 750px) {
         line-height: 2em;
         flex-basis: 900px;
     }
@@ -136,32 +153,47 @@
 .main-content-col-2 {
     order: 1;
 
-    @media (min-width: 600px) {
-        flex-basis: 900px;
+    @media (min-width: 750px) {
+        flex-basis: 1000px;
     }
 }
 
-h2 {
-    padding-bottom: 0.5em;
-    text-align: center;
-    font-family: 'Merriweather Sans', sans-serif;
+.main-content-row-2 {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 750px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
-.works-text,
-.view-menu-text {
-    text-align: center;
-    margin: 0 2em;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    line-height: 2;
+.main-content-col-3 {
+    order: 1;
+
+    @media (min-width: 750px) {
+        line-height: 2em;
+        flex-basis: 900px;
+        order: 2;
+    }
 }
 
-.menu-text p {
-    text-align: center;
-    margin: 0 2em;
-    margin-bottom: 1.5em;
-    line-height: 1.5;
-    font-family: 'Montserrat', sans-serif;
+.main-content-col-4 {
+    order: 2;
+
+    @media (min-width: 600px) {
+        flex-basis: 900px;
+        order: 1;
+    }
+}
+
+.plans-container-row-3 {
+    @media (min-width: 750px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 }
 
 footer {

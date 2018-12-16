@@ -1,3 +1,168 @@
-body {
-    background: #a1dae3 url("../media/webpacklogo.png") repeat;
+
+// Global Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.good-img,
+.works-img,
+.menu-img,
+.plan-img-a,
+.plan-img-b,
+.plan-img-c,
+.quotes-img {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 1em 1.5em;
+}
+
+// Logo Bar
+.logo-bar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5em;
+}
+
+.logo {
+    padding-left: 0.8em;
+}
+
+.icon {
+    color: black;
+    padding-right: 0.8em;
+}
+
+// Navigation
+.navbar {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: black;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.nav-link {
+    display: inline-block;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+.signup {
+    padding: 3px;
+    background: yellow;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+// Header Styling
+
+.header-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.header-col-1 {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Merriweather Sans', sans-serif;
+    order: 2;
+
+    @media (min-width: 600px) {
+        order: 1;
+        line-height: 3em;
+    }
+}
+
+.header-col-2 {
+    order: 1;
+
+    @media (min-width: 600px) {
+        order: 2;
+        flex-basis: 700px;
+    }
+}
+// End Header
+
+// Main Content Styling
+
+.main-content-row-1 {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.main-content-col-1 {
+    order: 2;
+
+    @media (min-width: 600px) {
+        line-height: 2em;
+        flex-basis: 900px;
+    }
+}
+
+.main-content-col-2 {
+    order: 1;
+
+    @media (min-width: 600px) {
+        flex-basis: 900px;
+    }
+}
+
+h2 {
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.works-text,
+.menu-text,
+.plans {
+    text-align: center;
+    margin: 0 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+}
+
+.soc-med a i,
+.copyright a {
+    color: white;
+    display: inline-block;
+    padding: 0.5em;
 }

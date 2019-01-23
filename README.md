@@ -9,3 +9,5 @@ I plan to return to this project to update and improve it.
 The best part of this project was gaining experience using the webpack template authored by Rachel Manning.
 
 This project is a work in progress.
+
+https://htmlpreview.github.io/?https://github.com/erickarodom/fresh-eats/blob/master/dist/index.html
